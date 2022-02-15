@@ -9,15 +9,18 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
     @IBOutlet weak var diceImageView1: UIImageView!
     @IBOutlet weak var diceImageView2: UIImageView!
-    @IBOutlet weak var rollDiceBtn: UIButton!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    @IBAction func rollDiceBtn(_ sender: UIButton) {
+        let images = [#imageLiteral(resourceName: "DiceOne"), #imageLiteral(resourceName: "DiceTwo"), #imageLiteral(resourceName: "DiceThree"), #imageLiteral(resourceName: "DiceFour"), #imageLiteral(resourceName: "DiceFive"), #imageLiteral(resourceName: "DiceSix")]
         
-        diceImageView1.image = #imageLiteral(resourceName: "DiceSix")
-        diceImageView2.image = #imageLiteral(resourceName: "DiceTwo")
+        let pickFirst = Int.random(in: 0...5)
+        let pickSecond = Int.random(in: 0...5)
+        
+        diceImageView1.image = images[pickFirst]
+        diceImageView2.image = images[pickSecond]
     }
 
 

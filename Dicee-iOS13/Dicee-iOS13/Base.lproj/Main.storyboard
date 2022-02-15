@@ -43,6 +43,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Roll">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="rollDiceBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sYb-Th-Hvi"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -51,7 +54,6 @@
                     <connections>
                         <outlet property="diceImageView1" destination="d6f-ER-VZy" id="2iG-To-iqd"/>
                         <outlet property="diceImageView2" destination="dbT-ZX-Qca" id="RcX-jq-Yda"/>
-                        <outlet property="rollDiceBtn" destination="KTY-kK-Erh" id="kUD-FM-hBs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
