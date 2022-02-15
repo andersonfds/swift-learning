@@ -6,4 +6,4 @@ Apps so far:
 
 - I am Rich
 - I am Poor
-- Dicee (Under development)
+- Dicee
