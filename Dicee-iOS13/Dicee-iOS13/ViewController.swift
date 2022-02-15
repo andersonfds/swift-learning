@@ -16,11 +16,8 @@ class ViewController: UIViewController {
     @IBAction func rollDiceBtn(_ sender: UIButton) {
         let images = [#imageLiteral(resourceName: "DiceOne"), #imageLiteral(resourceName: "DiceTwo"), #imageLiteral(resourceName: "DiceThree"), #imageLiteral(resourceName: "DiceFour"), #imageLiteral(resourceName: "DiceFive"), #imageLiteral(resourceName: "DiceSix")]
         
-        let pickFirst = Int.random(in: 0...5)
-        let pickSecond = Int.random(in: 0...5)
-        
-        diceImageView1.image = images[pickFirst]
-        diceImageView2.image = images[pickSecond]
+        diceImageView1.image = images.randomElement()
+        diceImageView2.image = images.randomElement()
     }
 
 
