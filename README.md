@@ -7,3 +7,4 @@ Apps so far:
 - I am Rich
 - I am Poor
 - Dicee
+- Magic 8 Ball
