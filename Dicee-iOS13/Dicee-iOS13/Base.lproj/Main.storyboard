@@ -17,9 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GreenBackground" translatesAutoresizingMaskIntoConstraints="NO" id="BUY-r1-ZUf">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GreenBackground" translatesAutoresizingMaskIntoConstraints="NO" id="BUY-r1-ZUf">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DiceeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="AWT-ke-Hwh">
@@ -50,6 +49,12 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="BUY-r1-ZUf" secondAttribute="trailing" id="2ye-g6-dc8"/>
+                            <constraint firstAttribute="bottom" secondItem="BUY-r1-ZUf" secondAttribute="bottom" id="KKd-8P-p9B"/>
+                            <constraint firstItem="BUY-r1-ZUf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="QpF-9G-kpO"/>
+                            <constraint firstItem="BUY-r1-ZUf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="rTx-R3-n3i"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="diceImageView1" destination="d6f-ER-VZy" id="2iG-To-iqd"/>
