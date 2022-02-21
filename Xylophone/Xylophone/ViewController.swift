@@ -10,13 +10,13 @@ import UIKit
 import AVFoundation
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
+    
     var player: AVAudioPlayer?
-
+    
     @IBAction func keyPressed(_ sender: UIButton) {
         let pressedLetter : String = sender.titleLabel?.text ?? ""
         
@@ -25,16 +25,16 @@ class ViewController: UIViewController {
         do {
             try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback)
             try AVAudioSession.sharedInstance().setActive(true)
-
+            
             player = try AVAudioPlayer(contentsOf: url)
-
+            
             player?.play()
-
+            
         } catch let error {
             print(error.localizedDescription)
         }
     }
     
-
+    
 }
 
