@@ -8,3 +8,4 @@ Apps so far:
 - I am Poor
 - Dicee
 - Magic 8 Ball
+- Xylophone
